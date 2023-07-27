@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "author": "Jake Lorkin",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+      { "type": "wokwi-neopixel", "id": "rgb1", "top": 2.38, "left": 168.14, "attrs": {} }
+    ],
+    "connections": [
+      [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+      [ "rgb1:DIN", "esp:D23", "green", [ "h8.96", "v-11.02", "h-74.78", "v33.08" ] ],
+      [ "rgb1:VSS", "esp:GND.1", "white", [ "h35.8", "v132.62" ] ],
+      [ "rgb1:VDD", "esp:3V3", "red", [ "h-32.27", "v157.56" ] ]
+    ],
+    "dependencies": {}
+  }

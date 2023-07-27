@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = 'build\PingPongClock.ino.bin'
+elf = 'build\PingPongClock.ino.elf'
+
+[[net.forward]]
+from = "localhost:800"
+to = "10.13.37.2:80"
